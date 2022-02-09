@@ -14977,7 +14977,7 @@ a.anchor-link {
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[6]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[25]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># extract schools name</span>
@@ -15007,7 +15007,7 @@ a.anchor-link {
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[6]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[25]:</div>
 
 
 
@@ -15048,7 +15048,7 @@ But I want to foucs on this school: <strong>continental</strong>. The reasonis t
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[7]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[160]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># to see authors belong to which schools</span>
@@ -15068,7 +15068,7 @@ But I want to foucs on this school: <strong>continental</strong>. The reasonis t
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[7]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[160]:</div>
 
 
 
@@ -15100,13 +15100,13 @@ Name: author, dtype: object</pre>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[8]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[37]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># to show the authors in continental group</span>
 <span class="n">df4</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="n">df</span><span class="p">[</span><span class="s2">&quot;school&quot;</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;continental&#39;</span><span class="p">]</span>
 <span class="n">cont</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">Series</span><span class="p">(</span><span class="n">df4</span><span class="p">[</span><span class="s1">&#39;author&#39;</span><span class="p">])</span><span class="o">.</span><span class="n">unique</span><span class="p">()</span>
-<span class="n">df4</span>
+<span class="n">cont</span>
 </pre></div>
 
      </div>
@@ -15122,237 +15122,13 @@ Name: author, dtype: object</pre>
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[8]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[37]:</div>
 
 
 
-<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html">
-<div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
 
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>title</th>
-      <th>author</th>
-      <th>school</th>
-      <th>sentence_spacy</th>
-      <th>sentence_str</th>
-      <th>original_publication_date</th>
-      <th>corpus_edition_date</th>
-      <th>sentence_length</th>
-      <th>sentence_lowered</th>
-      <th>tokenized_txt</th>
-      <th>lemmatized_str</th>
-      <th>scores</th>
-      <th>compound</th>
-      <th>comp_score</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>185450</th>
-      <td>The Birth Of The Clinic</td>
-      <td>Foucault</td>
-      <td>continental</td>
-      <td>For us, the human body defines, by natural ri...</td>
-      <td>For us, the human body defines, by natural ri...</td>
-      <td>1963</td>
-      <td>2003</td>
-      <td>237</td>
-      <td>for us, the human body defines, by natural ri...</td>
-      <td>['for', 'us', 'the', 'human', 'body', 'defines...</td>
-      <td>for -PRON- , the human body define , by nat...</td>
-      <td>{'neg': 0.0, 'neu': 0.937, 'pos': 0.063, 'comp...</td>
-      <td>0.3612</td>
-      <td>pos</td>
-    </tr>
-    <tr>
-      <th>185451</th>
-      <td>The Birth Of The Clinic</td>
-      <td>Foucault</td>
-      <td>continental</td>
-      <td>But this order of the solid, visible body is o...</td>
-      <td>But this order of the solid, visible body is o...</td>
-      <td>1963</td>
-      <td>2003</td>
-      <td>153</td>
-      <td>but this order of the solid, visible body is o...</td>
-      <td>['but', 'this', 'order', 'of', 'the', 'solid',...</td>
-      <td>but this order of the solid , visible body be...</td>
-      <td>{'neg': 0.0, 'neu': 0.932, 'pos': 0.068, 'comp...</td>
-      <td>0.2263</td>
-      <td>pos</td>
-    </tr>
-    <tr>
-      <th>185452</th>
-      <td>The Birth Of The Clinic</td>
-      <td>Foucault</td>
-      <td>continental</td>
-      <td>There have been, and will be, other distributi...</td>
-      <td>There have been, and will be, other distributi...</td>
-      <td>1963</td>
-      <td>2003</td>
-      <td>61</td>
-      <td>there have been, and will be, other distributi...</td>
-      <td>['there', 'have', 'been', 'and', 'will', 'be',...</td>
-      <td>there have be , and will be , other distribut...</td>
-      <td>{'neg': 0.231, 'neu': 0.769, 'pos': 0.0, 'comp...</td>
-      <td>-0.4019</td>
-      <td>neg</td>
-    </tr>
-    <tr>
-      <th>185453</th>
-      <td>The Birth Of The Clinic</td>
-      <td>Foucault</td>
-      <td>continental</td>
-      <td>When will we be able to define the structures ...</td>
-      <td>When will we be able to define the structures ...</td>
-      <td>1963</td>
-      <td>2003</td>
-      <td>129</td>
-      <td>when will we be able to define the structures ...</td>
-      <td>['when', 'will', 'we', 'be', 'able', 'to', 'de...</td>
-      <td>when will -PRON- be able to define the struct...</td>
-      <td>{'neg': 0.091, 'neu': 0.909, 'pos': 0.0, 'comp...</td>
-      <td>-0.2960</td>
-      <td>neg</td>
-    </tr>
-    <tr>
-      <th>185454</th>
-      <td>The Birth Of The Clinic</td>
-      <td>Foucault</td>
-      <td>continental</td>
-      <td>Has anyone ever drawn up the specific geometry...</td>
-      <td>Has anyone ever drawn up the specific geometry...</td>
-      <td>1963</td>
-      <td>2003</td>
-      <td>109</td>
-      <td>has anyone ever drawn up the specific geometry...</td>
-      <td>['has', 'anyone', 'ever', 'drawn', 'up', 'the'...</td>
-      <td>have anyone ever draw up the specific geometr...</td>
-      <td>{'neg': 0.0, 'neu': 1.0, 'pos': 0.0, 'compound...</td>
-      <td>0.0000</td>
-      <td>neu</td>
-    </tr>
-    <tr>
-      <th>...</th>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-    </tr>
-    <tr>
-      <th>219224</th>
-      <td>Anti-Oedipus</td>
-      <td>Deleuze</td>
-      <td>continental</td>
-      <td>We'll never go too far with the deterritoriali...</td>
-      <td>We'll never go too far with the deterritoriali...</td>
-      <td>1972</td>
-      <td>1997</td>
-      <td>76</td>
-      <td>we'll never go too far with the deterritoriali...</td>
-      <td>['we', 'll', 'never', 'go', 'too', 'far', 'wit...</td>
-      <td>-PRON- will never go too far with the deterri...</td>
-      <td>{'neg': 0.0, 'neu': 1.0, 'pos': 0.0, 'compound...</td>
-      <td>0.0000</td>
-      <td>neu</td>
-    </tr>
-    <tr>
-      <th>219225</th>
-      <td>Anti-Oedipus</td>
-      <td>Deleuze</td>
-      <td>continental</td>
-      <td>In truth, the earth will one day become a plac...</td>
-      <td>In truth, the earth will one day become a plac...</td>
-      <td>1972</td>
-      <td>1997</td>
-      <td>58</td>
-      <td>in truth, the earth will one day become a plac...</td>
-      <td>['in', 'truth', 'the', 'earth', 'will', 'one',...</td>
-      <td>in truth , the earth will one day become a pl...</td>
-      <td>{'neg': 0.0, 'neu': 0.813, 'pos': 0.187, 'comp...</td>
-      <td>0.3182</td>
-      <td>pos</td>
-    </tr>
-    <tr>
-      <th>219226</th>
-      <td>Anti-Oedipus</td>
-      <td>Deleuze</td>
-      <td>continental</td>
-      <td>is not to be found in the neurotic or perverse...</td>
-      <td>is not to be found in the neurotic or perverse...</td>
-      <td>1972</td>
-      <td>1997</td>
-      <td>111</td>
-      <td>is not to be found in the neurotic or perverse...</td>
-      <td>['is', 'not', 'to', 'be', 'found', 'in', 'the'...</td>
-      <td>be not to be find in the neurotic or perverse...</td>
-      <td>{'neg': 0.322, 'neu': 0.678, 'pos': 0.0, 'comp...</td>
-      <td>-0.7650</td>
-      <td>neg</td>
-    </tr>
-    <tr>
-      <th>219227</th>
-      <td>Anti-Oedipus</td>
-      <td>Deleuze</td>
-      <td>continental</td>
-      <td>; it is no more behind than ahead, it coincide...</td>
-      <td>; it is no more behind than ahead, it coincide...</td>
-      <td>1972</td>
-      <td>1997</td>
-      <td>199</td>
-      <td>; it is no more behind than ahead, it coincide...</td>
-      <td>['it', 'is', 'no', 'more', 'behind', 'than', '...</td>
-      <td>; -PRON- be no more behind than ahead , -PRON...</td>
-      <td>{'neg': 0.061, 'neu': 0.939, 'pos': 0.0, 'comp...</td>
-      <td>-0.2960</td>
-      <td>neg</td>
-    </tr>
-    <tr>
-      <th>219228</th>
-      <td>Anti-Oedipus</td>
-      <td>Deleuze</td>
-      <td>continental</td>
-      <td>It therefore remains for us to see how, effect...</td>
-      <td>It therefore remains for us to see how, effect...</td>
-      <td>1972</td>
-      <td>1997</td>
-      <td>115</td>
-      <td>it therefore remains for us to see how, effect...</td>
-      <td>['it', 'therefore', 'remains', 'for', 'us', 't...</td>
-      <td>-PRON- therefore remain for -PRON- to see how...</td>
-      <td>{'neg': 0.0, 'neu': 0.838, 'pos': 0.162, 'comp...</td>
-      <td>0.4404</td>
-      <td>pos</td>
-    </tr>
-  </tbody>
-</table>
-<p>33779 rows × 14 columns</p>
-</div>
+<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
+<pre>array([&#39;Foucault&#39;, &#39;Derrida&#39;, &#39;Deleuze&#39;], dtype=object)</pre>
 </div>
 
 </div>
@@ -15370,7 +15146,7 @@ Name: author, dtype: object</pre>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[9]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[27]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># similar bar graph with only continental authors included</span>
@@ -15397,7 +15173,7 @@ Name: author, dtype: object</pre>
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[9]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[27]:</div>
 
 
 
@@ -15437,7 +15213,7 @@ Name: author, dtype: object</pre>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[10]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[35]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># define wordcloud plot function</span>
@@ -15463,7 +15239,7 @@ Name: author, dtype: object</pre>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[11]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[149]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># plot wordcloud for continental authors</span>
@@ -15550,7 +15326,7 @@ Here are the results:</p>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[12]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[152]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># plot wordcloud for authors in nietzsche school and in feminism school</span>
@@ -15643,7 +15419,7 @@ Here are the results:</p>
 </div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>As shown in the data description above, <strong>only</strong> Nietzche belongs to the school <strong>Nietzsche</strong>, and the other three authors belong to the school <strong>feminism</strong>.</p>
+<p>As shown in the data description above, <strong>only</strong> Nietzche belongs to the school <strong>Nietzsche</strong>, and the other three authors belong to the school <strong>feminism</strong>. If we just look at the wordclouds for these four authors, we might conclude that <strong>Nietzsche</strong> would be similar to <strong>feminism</strong>, because Nietzsche mentioned "men" and "children" often, just like Beauvoir mentioned "man" a lot.</p>
 <p>We can still see some noise data listed in the wordcloud. For example, "t", "w", "ye", and"inh" listed in Wollstonecraft's wordcloud. So we can say that references generate data noise to analysis in our datasets. We can remove the references as a step to cleaning data next time to reduce the data noise.</p>
 <p>Furthermore, I found something interesting with these four new wordclouds. If we just look at the wordclouds for these four authors, we might conclude that <strong>Nietzsche</strong> would be similar to <strong>feminism</strong>, because Nietzsche mentioned "men" and "children" often, just like Beauvoir mentioned "man" a lot.</p>
 <p>Moreover, there is a word, <strong>dtype</strong>, appears in five wordclouds. It seems to be a terminology used in philosophy area. Hence, I tried to search this word up among <strong>"sentence_lowered"</strong>, but I found nothing. I would consider this word is also a data noise.</p>
@@ -15659,8 +15435,8 @@ Here are the results:</p>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <p>To analyze further, we meed to search up the real world situation, compared to what we get from sentiment analysis and wordcloud, to see if we get a correct understanding of the data.</p>
-<p>Let's first see: <strong>is it reasonable that the attitude of continental authors tends to be neutral?</strong> I would say yes, according to <strong>Continental philosophy</strong> is a set of 19th- and 20th-century philosophical traditions from mainland Europe. During that period, people having different thoughts, either the time in world wars or the time in cold war. Also, it contains different schools so that it is possible to attack or defense for their schools as well. As a result, <strong>it makes sense the sentences wrtitten by continental philosophers are more neutral than other schools.</strong></p>
-<p>We move little further and detailed, to see <strong>if Nietzche school is similar to feminism school.</strong> However, it is not. <strong>Nietzsche's philosophy contemplates the meaning of values and their significance to human existence.</strong> This means not only for women, Nietzsche's insight is for all human beings. This is no surprised why there are also so much "children" is listed in Nietzsche's wordcloud. Also, he mentioned the most about <strong>"suffering"</strong>, and we can tell he might talk much about how to make people suffer less and what they were suffering.</p>
+<p>Let's first see: <strong>is it reasonable that the attitude of continental authors tends to be neutral?</strong> I would say yes, according to Continental philosophy is a set of 19th- and 20th-century philosophical traditions from mainland Europe. During that period, people having different thoughts, either the time in world wars or the time in cold war. Also, it contains different schools so that it is possible to attack or defense for their schools as well. As a result, <strong>it makes sense the sentences wrtitten by continental philosophers are more neutral than other schools.</strong></p>
+<p>We move little further and detailed, to see <strong>if Nietzche school is similar to feminism school.</strong> However, it is not. <em>Nietzsche's philosophy contemplates the meaning of values and their significance to human existence.</em> This means not only for women, Nietzsche's insight is for all human beings. This is no surprised why there are also so much "children" is listed in Nietzsche's wordcloud. Also, he mentioned the most about <strong>"suffering"</strong>, and we can tell he might talk much about how to make people suffer less and what they were suffering.</p>
 <p>Last but not least, we can also tell the difference between Davis and other feminism authors. Unlike <em>Simone de Beauvoir</em> and <em>Mary Wollstonecraft</em>, <em>Angela Davis</em> actived in a stage <strong>African-American Civil Rights Movement</strong>. In this context, it is no wonder her words tend to be more aggressive, such as "raged" and "slavery".</p>
 
 </div>
@@ -15675,6 +15451,20 @@ Here are the results:</p>
 <p>In conclusion, utilizing sentiment analysis, we can actually see the authors attitude and we can also guess about the era they were living. Also, we can tell what was going on based on the words authors used differently in diferent schools. Most importantly, we can use wordcloud to see the goal of the authors, and finally understand their school's goal.</p>
 
 </div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span> 
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
 </div>
 </body>
 
