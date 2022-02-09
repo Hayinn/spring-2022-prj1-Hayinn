@@ -1,5 +1,5 @@
-# ADS Project 1:  R Notebook on the history of philosophy
+# ADS Project 1
 
 ### Doc folder
 
-The doc directory contains the report or presentation files. It can have subfolders.  
+The doc directory contains a html file which is about my project notebook
